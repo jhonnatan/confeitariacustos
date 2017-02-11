@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E72D1C6-B22D-4625-A5BA-FC5EB434BC0E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Confeitaria.DAL</RootNamespace>
+    <AssemblyName>Confeitaria.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\201702090715187_InitialCreate.cs" />
+    <Compile Include="Migrations\201702090715187_InitialCreate.Designer.cs">
+      <DependentUpon>201702090715187_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702090732106_Inicio.cs" />
+    <Compile Include="Migrations\201702090732106_Inicio.Designer.cs">
+      <DependentUpon>201702090732106_Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702090735199_Inicio2.cs" />
+    <Compile Include="Migrations\201702090735199_Inicio2.Designer.cs">
+      <DependentUpon>201702090735199_Inicio2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702091559285_AddTableReceitas.cs" />
+    <Compile Include="Migrations\201702091559285_AddTableReceitas.Designer.cs">
+      <DependentUpon>201702091559285_AddTableReceitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702091805250_AddDataAnnotation.cs" />
+    <Compile Include="Migrations\201702091805250_AddDataAnnotation.Designer.cs">
+      <DependentUpon>201702091805250_AddDataAnnotation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702091814589_AddMaxLength.cs" />
+    <Compile Include="Migrations\201702091814589_AddMaxLength.Designer.cs">
+      <DependentUpon>201702091814589_AddMaxLength.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702091817355_AddStringLength.cs" />
+    <Compile Include="Migrations\201702091817355_AddStringLength.Designer.cs">
+      <DependentUpon>201702091817355_AddStringLength.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702091822059_AddStringLength2.cs" />
+    <Compile Include="Migrations\201702091822059_AddStringLength2.Designer.cs">
+      <DependentUpon>201702091822059_AddStringLength2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702091921315_AddTableReceitaItens.cs" />
+    <Compile Include="Migrations\201702091921315_AddTableReceitaItens.Designer.cs">
+      <DependentUpon>201702091921315_AddTableReceitaItens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702091928065_AddTableReceitas1.cs" />
+    <Compile Include="Migrations\201702091928065_AddTableReceitas1.Designer.cs">
+      <DependentUpon>201702091928065_AddTableReceitas1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702092008414_AlteracaoBD1.cs" />
+    <Compile Include="Migrations\201702092008414_AlteracaoBD1.Designer.cs">
+      <DependentUpon>201702092008414_AlteracaoBD1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702092023238_AlteracaoBD2.cs" />
+    <Compile Include="Migrations\201702092023238_AlteracaoBD2.Designer.cs">
+      <DependentUpon>201702092023238_AlteracaoBD2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702101118059_AlteracaoModel1002.cs" />
+    <Compile Include="Migrations\201702101118059_AlteracaoModel1002.Designer.cs">
+      <DependentUpon>201702101118059_AlteracaoModel1002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702101942322_AlterModel1.cs" />
+    <Compile Include="Migrations\201702101942322_AlterModel1.Designer.cs">
+      <DependentUpon>201702101942322_AlterModel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702101946281_AlterModel11.cs" />
+    <Compile Include="Migrations\201702101946281_AlterModel11.Designer.cs">
+      <DependentUpon>201702101946281_AlterModel11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Repository\Base\Repository.cs" />
+    <Compile Include="Context\BancoContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Base\IRepository.cs" />
+    <Compile Include="Repository\IngredienteRepository.cs" />
+    <Compile Include="Repository\ReceitaItensRepository.cs" />
+    <Compile Include="Repository\ReceitaRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201702090715187_InitialCreate.resx">
+      <DependentUpon>201702090715187_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702090732106_Inicio.resx">
+      <DependentUpon>201702090732106_Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702090735199_Inicio2.resx">
+      <DependentUpon>201702090735199_Inicio2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702091559285_AddTableReceitas.resx">
+      <DependentUpon>201702091559285_AddTableReceitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702091805250_AddDataAnnotation.resx">
+      <DependentUpon>201702091805250_AddDataAnnotation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702091814589_AddMaxLength.resx">
+      <DependentUpon>201702091814589_AddMaxLength.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702091817355_AddStringLength.resx">
+      <DependentUpon>201702091817355_AddStringLength.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702091822059_AddStringLength2.resx">
+      <DependentUpon>201702091822059_AddStringLength2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702091921315_AddTableReceitaItens.resx">
+      <DependentUpon>201702091921315_AddTableReceitaItens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702091928065_AddTableReceitas1.resx">
+      <DependentUpon>201702091928065_AddTableReceitas1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702092008414_AlteracaoBD1.resx">
+      <DependentUpon>201702092008414_AlteracaoBD1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702092023238_AlteracaoBD2.resx">
+      <DependentUpon>201702092023238_AlteracaoBD2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702101118059_AlteracaoModel1002.resx">
+      <DependentUpon>201702101118059_AlteracaoModel1002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702101942322_AlterModel1.resx">
+      <DependentUpon>201702101942322_AlterModel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702101946281_AlterModel11.resx">
+      <DependentUpon>201702101946281_AlterModel11.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Confeitaria.Model.csproj">
+      <Project>{bcbeb66f-a647-4876-80d0-fdb281c58fc7}</Project>
+      <Name>Confeitaria.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
