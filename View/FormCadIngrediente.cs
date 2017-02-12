@@ -29,6 +29,7 @@ namespace View
             InitializeComponent();
             this.controller = controller;
             this.ingrediente = ingredienteEdicao;
+            CarregarCampos(ingredienteEdicao);
         }
 
         private void btnGravar_Click(object sender, EventArgs e)
@@ -51,8 +52,7 @@ namespace View
             }
             catch (Exception)
             {
-                //MessageBox.Show("Falha ao gravar registro!");
-                throw;
+                MessageBox.Show("Falha ao gravar registro!");                
             }
         }
 
@@ -80,6 +80,14 @@ namespace View
         private void btnSair_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        public void CarregarCampos(Ingrediente ingr)
+        {
+            txtDescricao.Text = ingr.Descricao;
+            txtPreco.Text = ingr.Preco.ToString();
+            cbxUnidade.Text = ingr.Unidade.ToString();
+            dtpDataCadastro.Value = ingr.DataCadastro;
         }
     }
 }
